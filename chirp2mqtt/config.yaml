@@ -8,7 +8,7 @@ arch:
   - armv7
   - aarch64
   - amd64
-url: "https://github.com/modrisb/chirpha"
+url: "https://github.com/DavidLaperriere/chirpha"
 startup: application
 webui: http://[HOST]:[PORT:8080]
 boot: auto
