@@ -5,6 +5,7 @@ build_from:
 args:
   CHIRPSTACK_VERSION: 4.11.1
   CHIRPSTACK_GATEWAY_BRIDGE_VERSION: 4.0.11
+  CHIRPSTACK_REST_API_VERSION: 4.10.2
 
 #cosign:
 #  identity: https://github.com/home-assistant/docker-base/.*

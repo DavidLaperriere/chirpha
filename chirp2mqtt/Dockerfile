@@ -10,6 +10,7 @@ SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 ARG CHIRPSTACK_VERSION
 ARG CHIRPSTACK_GATEWAY_BRIDGE_VERSION
+ARG CHIRPSTACK_REST_API_VERSION
 ARG BUILD_ARCH
 
 WORKDIR /usr/local/bin
@@ -33,8 +34,12 @@ RUN \
     && if [[ "$BUILD_ARCH" = "armhf" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack/chirpstack_${CHIRPSTACK_VERSION}_postgres_linux_armv7hf.tar.gz -O - | tar -xz; fi \
     && if [[ "$BUILD_ARCH" = "armhf" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack-gateway-bridge/chirpstack-gateway-bridge_${CHIRPSTACK_GATEWAY_BRIDGE_VERSION}_linux_armv7hf.tar.gz -O - | tar -xz; fi \
     && if [[ "$BUILD_ARCH" = "armv7" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack/chirpstack_${CHIRPSTACK_VERSION}_postgres_linux_armv7hf.tar.gz -O - | tar -xz; fi \
-    && if [[ "$BUILD_ARCH" = "armv7" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack-gateway-bridge/chirpstack-gateway-bridge_${CHIRPSTACK_GATEWAY_BRIDGE_VERSION}_linux_armv7hf.tar.gz -O - | tar -xz; fi
-
+    && if [[ "$BUILD_ARCH" = "armv7" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack-gateway-bridge/chirpstack-gateway-bridge_${CHIRPSTACK_GATEWAY_BRIDGE_VERSION}_linux_armv7hf.tar.gz -O - | tar -xz; fi \
+    && if [[ "$BUILD_ARCH" = "amd64" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack-rest-api/chirpstack-rest-api_${CHIRPSTACK_REST_API_VERSION}_linux_amd64.tar.gz -O - | tar -xz;  fi \
+    && if [[ "$BUILD_ARCH" = "armhf" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack-rest-api/chirpstack-rest-api_${CHIRPSTACK_REST_API_VERSION}_linux_armhf.tar.gz -O - | tar -xz;  fi \
+    && if [[ "$BUILD_ARCH" = "armv7" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack-rest-api/chirpstack-rest-api_${CHIRPSTACK_REST_API_VERSION}_linux_armv7.tar.gz -O - | tar -xz;  fi \
+    && if [[ "$BUILD_ARCH" = "aarch64" ]]; then wget -c https://artifacts.chirpstack.io/downloads/chirpstack-rest-api/chirpstack-rest-api_${CHIRPSTACK_REST_API_VERSION}_linux_arm64.tar.gz -O - | tar -xz;  fi 
+    
 # Build arugments
 ARG BUILD_DATE
 ARG BUILD_REF
@@ -55,6 +60,7 @@ LABEL \
 
 EXPOSE 8080
 EXPOSE 1700/udp
+EXPOSE 8090
 
 # Root filesystem
 COPY rootfs /
