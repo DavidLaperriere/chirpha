@@ -107,6 +107,12 @@ if [ $? != 0 ]; then
     chirpstack-gateway-bridge &
 fi
 
+#chirpstack-api
+if [ -f "/usr/local/bin/chirpstack-rest-api" ]; then
+    #chirpstack-rest-api --server localhost:8080 --bind 0.0.0.0:8090 --insecure --cors "*" &
+	chirpstack-rest-api &
+fi
+    
 #python3 -m usr.app.start
 cd /
 python3 -m usr.app.start

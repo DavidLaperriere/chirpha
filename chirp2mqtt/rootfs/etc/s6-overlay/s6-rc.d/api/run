@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#set -x
+#echo "++ rest api ++"
+
+#chirpstack-rest-api
+exec chirpstack-rest-api 
+
