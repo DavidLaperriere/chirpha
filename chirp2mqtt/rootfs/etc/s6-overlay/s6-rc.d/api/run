@@ -3,5 +3,5 @@
 #echo "++ rest api ++"
 
 #chirpstack-rest-api
-exec chirpstack-rest-api 
+exec chirpstack-rest-api --insecure --cors "*"
 
