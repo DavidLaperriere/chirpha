@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.1.140
+
+- add REST api
+
 ## 1.1.139
 
 - Test code synchronization/refactoring
