@@ -6,7 +6,7 @@
 
 ## 1.1.140
 
-- Upgrade to CHIRPSTACK_VERSION: 4.12.1Add commentMore actions
+- Upgrade to CHIRPSTACK_VERSION: 4.12.1
 
 ## 1.1.140 (D4A)
 
