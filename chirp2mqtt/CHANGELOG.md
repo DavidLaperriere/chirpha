@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.1.142
+
+- add option to configure MQTT server and port
+
 ## 1.1.141
 
 - Fixed database re-creation on every add-on re-start

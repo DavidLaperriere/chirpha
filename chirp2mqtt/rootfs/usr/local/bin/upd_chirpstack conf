@@ -3,8 +3,10 @@
 # Start Configurator service
 # ==============================================================================
 SERVER=$(bashio::config 'mqtt_server')
+PORT=$(bashio::config 'mqtt_port')
 USERNAME=$(bashio::config 'mqtt_user')
 PWD=$(bashio::config 'mqtt_password')
 
 sed -i 's/username=.*/username="$USERNAME"/' /etc/chirpstack/chirpstack.toml
+sed -i 's/server=.*/server="tcp://$SERVER:$PORT"/' /etc/chirpstack/chirpstack.toml
 #sed -i "s/local   replication/#local   replication/" $PGDATA/pg_hba.conf
