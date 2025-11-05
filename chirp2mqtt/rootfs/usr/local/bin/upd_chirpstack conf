@@ -8,5 +8,5 @@ USERNAME=$(bashio::config 'mqtt_user')
 PWD=$(bashio::config 'mqtt_password')
 
 sed -i 's/username=.*/username="$USERNAME"/' /etc/chirpstack/chirpstack.toml
-sed -i 's/server=.*/server="tcp://$SERVER:$PORT"/' /etc/chirpstack/chirpstack.toml
+sed -i 's|server = "tcp://core-mosquitto:1883"|server = "tcp://'"$SERVER"':'"$PORT"'"|' /etc/chirpstack/chirpstack.toml
 #sed -i "s/local   replication/#local   replication/" $PGDATA/pg_hba.conf
