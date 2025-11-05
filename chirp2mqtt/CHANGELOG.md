@@ -1,6 +1,6 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
-## 1.1.142
+## 1.1.142 (D4A)
 
 - add option to configure MQTT server and port
 
