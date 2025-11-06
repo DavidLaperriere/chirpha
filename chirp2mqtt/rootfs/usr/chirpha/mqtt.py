@@ -99,7 +99,7 @@ class ChirpToHA:
         self._unique_id = generate_unique_id(self._config)
         self._grpc_client: ChirpGrpc = grpc_client
         self._host = self._config.get(CONF_MQTT_SERVER)
-        self._port = self._config.get(CONF_MQTT_PORT)
+        self._port = int(self._config.get(CONF_MQTT_PORT, 1883))
         self._user = self._config.get(CONF_MQTT_USER)
         self._pwd = self._config.get(CONF_MQTT_PWD)
         self._classes = classes
