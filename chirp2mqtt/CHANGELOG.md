@@ -1,8 +1,41 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+Mod https://github.com/DavidLaperriere/chirpha
+
 ## 1.1.142 (D4A)
 
 - add option to configure MQTT server and port
+
+## 1.1.140 (D4A)
+
+- add REST api
+------
+Upstream https://github.com/modrisb/chirpha
+
+## 1.1.148
+
+- Upgrade to ghcr.io/hassio-addons/base:18.1.1, CHIRPSTACK_VERSION: 4.14.1
+
+## 1.1.147
+
+- Fixed issue with event/frame appearance in ingress
+
+## 1.1.146
+
+- Fixed value processing for cases when not(value)==True
+
+## 1.1.144
+
+- Ingress support added
+
+## 1.1.143
+
+- Synchronized code with https://github.com/modrisb/chirp
+- Upgrade to ghcr.io/hassio-addons/base:18.0.3, CHIRPSTACK_VERSION: 4.13.0
+
+## 1.1.142
+
+- Fixed issue with enabled_by_default processing
 
 ## 1.1.141
 
@@ -11,10 +44,6 @@
 ## 1.1.140
 
 - Upgrade to CHIRPSTACK_VERSION: 4.12.1
-
-## 1.1.140 (D4A)
-
-- add REST api
 
 ## 1.1.139
 

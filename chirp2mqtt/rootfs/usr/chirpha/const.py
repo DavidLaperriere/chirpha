@@ -1,4 +1,4 @@
-"""The Chirpstack LoRaWan integration - constant definitions."""
+"""The Chirpstack LoRaWAN integration - constant definitions."""
 
 CONF_API_SERVER = "chirpstack_api_server"
 CONF_API_PORT = "server_port"
@@ -13,6 +13,7 @@ CONF_MQTT_PORT = "mqtt_port"
 CONF_MQTT_USER = "mqtt_user"
 CONF_MQTT_PWD = "mqtt_password"
 CONF_MQTT_DISC = "discovery_prefix"
+CONF_MQTT_CHIRPSTACK_PREFIX = "mqtt_chirpstack_prefix"
 
 DEFAULT_MQTT_SERVER = "core-mosquitto"
 DEFAULT_MQTT_PORT = 1883
@@ -27,6 +28,7 @@ CONF_OPTIONS_EXPIRE_AFTER = "options_add_expire_after"
 DEFAULT_OPTIONS_LOG_LEVEL = "info"
 DEFAULT_OPTIONS_EXPIRE_AFTER = False
 DEFAULT_OPTIONS_ONLINE_PER_DEVICE = 0
+DEFAULT_MQTT_CHIRPSTACK_PREFIX = ""
 
 CHIRPSTACK_TENANT = "HA owned"
 CHIRPSTACK_APPLICATION = "HA integration"
@@ -38,7 +40,7 @@ BRIDGE_NAME = "Chirp2MQTT Bridge"
 BRIDGE = "Bridge"
 BRIDGE_STATE_ID = "state"
 BRIDGE_ENTITY_NAME = "Connection state"
-INTEGRATION_DEV_NAME = "ChirpStack LoraWan Integration"
+INTEGRATION_DEV_NAME = "ChirpStack LoRaWAN Integration"
 CONNECTIVITY_DEVICE_CLASS = "connectivity"
 BRIDGE_RESTART_ID = "restart"
 BRIDGE_RESTART_NAME = "Reload devices"
