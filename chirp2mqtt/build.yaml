@@ -3,9 +3,9 @@ build_from:
   amd64: ghcr.io/hassio-addons/base:18.1.1
   armv7: ghcr.io/hassio-addons/base:18.1.1
 args:
-  CHIRPSTACK_VERSION: 4.14.1
-  CHIRPSTACK_GATEWAY_BRIDGE_VERSION: 4.0.11
-  CHIRPSTACK_REST_API_VERSION: 4.10.2
+  CHIRPSTACK_VERSION: 4.15.0
+  CHIRPSTACK_GATEWAY_BRIDGE_VERSION: 4.1.1
+  CHIRPSTACK_REST_API_VERSION: 4.15.0
 
 #cosign:
 #  identity: https://github.com/home-assistant/docker-base/.*

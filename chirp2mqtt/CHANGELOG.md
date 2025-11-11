@@ -2,6 +2,13 @@
 
 Mod https://github.com/DavidLaperriere/chirpha
 
+## 1.1.149 (D4A)
+   - sync with upstream  1.1.148
+   - upgrade to   
+        CHIRPSTACK_VERSION: 4.15.0
+        CHIRPSTACK_GATEWAY_BRIDGE_VERSION: 4.1.1
+        CHIRPSTACK_REST_API_VERSION: 4.15.0
+
 ## 1.1.142 (D4A)
 
 - add option to configure MQTT server and port
