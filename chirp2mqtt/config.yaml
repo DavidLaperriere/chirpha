@@ -9,13 +9,15 @@ arch:
   - aarch64
   - amd64
 url: "https://github.com/DavidLaperriere/chirpha"
-panel_icon: mdi:alpha-l-circle
 startup: application
+webui: http://[HOST]:[PORT:8099]
 boot: auto
 ports:
+  8099/tcp: 8099
   8090/tcp: 8090
   1700/udp: 1700
 ports_description:
+  8099/tcp: "ChirpStack server WEB UI port"
   8090/tcp: "ChirpStack server REST api port"
   1700/udp: "Port to receive LoraWAN packets"
 homeassistant: "2024.3.1"

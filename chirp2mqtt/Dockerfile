@@ -64,6 +64,7 @@ LABEL \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
 
+EXPOSE 8080
 EXPOSE 1700/udp
 EXPOSE 8090
 
