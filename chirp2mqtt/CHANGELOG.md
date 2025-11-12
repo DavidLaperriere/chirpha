@@ -8,6 +8,7 @@ Mod https://github.com/DavidLaperriere/chirpha
         CHIRPSTACK_VERSION: 4.15.0
         CHIRPSTACK_GATEWAY_BRIDGE_VERSION: 4.1.1
         CHIRPSTACK_REST_API_VERSION: 4.15.0
+   - remove ingress - restore WebUI 
 
 ## 1.1.142 (D4A)
 
@@ -31,13 +32,9 @@ Upstream https://github.com/modrisb/chirpha
 
 - Fixed value processing for cases when not(value)==True
 
-## 1.1.144
-
-- Ingress support added
-
 ## 1.1.143
 
-- Synchronized code with https://github.com/modrisb/chirp
+- synchronized code with https://github.com/modrisb/chirp
 - Upgrade to ghcr.io/hassio-addons/base:18.0.3, CHIRPSTACK_VERSION: 4.13.0
 
 ## 1.1.142
